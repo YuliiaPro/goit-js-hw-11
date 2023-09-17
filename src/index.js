@@ -38,9 +38,9 @@ async function getPhotos(query, page) {
                    per_page: 40,
               },
             })
-      console.log(response);
+     // console.log(response);
       totalHits = response.data.total;
-      console.log(`totalHits for "${query}" : ${ totalHits }`);
+      //console.log(`totalHits for "${query}" : ${ totalHits }`);
       if ( page === 1) {
                 Notiflix.Notify.success(
                     `Hooray! We found ${response.data.total} images.`
