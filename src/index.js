@@ -88,7 +88,7 @@ function createMarkup(photos) {
 }
 
  const simpleLightBox = new SimpleLightbox(".gallery a", {captionDelay: 250, captionPosition:"button"});
-console.log(simpleLightBox);
+//console.log(simpleLightBox);
 
 
 
@@ -99,7 +99,6 @@ function onSubmit(e) {
   page = 1;
   totalHits = 0;
   refs.gallery.innerHTML = '';
-  console.log(query, page, totalHits);
   if (!searchQuery) {
     return Notiflix.Notify.failure(
       'Sorry, there are no images matching your search query. Please try again.'
