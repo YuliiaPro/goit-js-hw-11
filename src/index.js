@@ -35,8 +35,8 @@ function onSubmit(e) {
     );
   }
   
-  query = searchQuery;
-  page = 1;
+  const query = searchQuery;
+  const page = 1;
   
 
   getPhotos(query, page).then((resp) => {
