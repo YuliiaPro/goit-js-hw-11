@@ -5,10 +5,13 @@
 .search-form {
     display: flex;
     width: 100%;
-    margin: 0 auto;
+    //margin: 0 auto;
     margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 50px;
     background: #1630a5;
-    padding: 10px 700px;
+   
 
 
 }
@@ -19,7 +22,7 @@
     font-size: 18px;
     padding-left: 15px;
     border: 1px solid #303030;
-    min-width: 300px;
+    width: 500px;
 }
 
 .search-btn,
