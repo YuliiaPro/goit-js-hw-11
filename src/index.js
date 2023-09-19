@@ -11,6 +11,7 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 refs.searchForm.addEventListener('submit', onSubmit);
 refs.loadMore.style.display = 'none';
 
+let query = '';
 let page = 1;
 
 const observer = new IntersectionObserver((entries, observer) => {
@@ -36,10 +37,8 @@ function onSubmit(e) {
     );
   }
   
-  let query = searchQuery;
-
+  query = searchQuery;
   
-
   getPhotos(query, page).then((resp) => {
 
 Notiflix.Notify.success(
