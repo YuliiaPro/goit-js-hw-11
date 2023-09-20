@@ -5,10 +5,9 @@
 .search-form {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid var(--btn-color);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-        background-color: #1630a5;
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    background-color: #1630a5;
 }
 .container{
     width: 100%;
@@ -36,14 +35,11 @@
 }
 
 
-.search-btn,
-.load-more {
+.search-btn {
     height: 35px;
-   // font-size: 14px;
     padding: 10px 10px;
     border: none;
     color: #303030;
-    //border-color: #ffffff;
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 0 4px 4px 0;
@@ -51,18 +47,15 @@
         
 }
 
-.load-more {
-    display: block;
-    margin: 0 auto;
-}
-
-.load-more.is-hidden {
-    display: none;
+.search-btn:hover,
+.search-btn:focus {
+    padding: 11px;
+    border: 1px solid #ffffff;
 }
 
 .icon:hover,
 .icon:focus {
-    fill: rgb(18, 231, 160);
+    fill: rgb(32, 8, 247);
 }
 
 .gallery {
@@ -72,7 +65,8 @@
     margin-right: 0;
     margin-top: 0;
     margin-bottom: 20px;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .photo-card {
@@ -81,7 +75,7 @@
     flex-basis: calc((100% - 120px) / 4);
     margin: 15px;
     border-radius: 0px 0px 4px 4px;
-        background: var(--WHITE, #FFF);
+        background: #ffffff;
         box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
